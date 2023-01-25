@@ -31,6 +31,7 @@ public class HomePage1 {
 	String[][] irctcdata;
 	ScreenShot ss;
 	String sshot;
+	String ab;
 	
 	Logger logger;
 	

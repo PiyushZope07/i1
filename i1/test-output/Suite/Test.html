@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 07 18:15:29 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>238 seconds (238792 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='combindTEst.HomePage1.pnrtc03()'><b>pnrtc03</b><br>Test class: combindTEst.HomePage1</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; style=&quot;margin-top: 10px; cursor: auto&quot; class=&quot;btn btn-primary btn-md&quot; value=&quot;Submit&quot; id=&quot;submitPnrNo&quot;&gt; is not clickable at point (944, 402). Other element would receive the click: &lt;img id=&quot;messageDialog&quot; decoding=&quot;async&quot; src=&quot;https://dishav3.ap-south-1.linodeobjects.com/Thumbsup.gif&quot; style=&quot;width: 238px; max-width: 100%; overflow: hidden; backface-visibility: hidden; transition: all 0.3s ease 0s; cursor: pointer; z-index: 9; position: static; border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; display: block; border-bottom-right-radius: 0px !important;&quot;&gt;
+  (Session info: chrome=106.0.5249.103)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;PSL-78VL6Q3&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e9a47974477cfc984d3b309b083c31f, clickElement {id=c6b7c39d-d948-4961-88c4-615658c2981c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\PIYUSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53268}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53268/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3e9a47974477cfc984d3b309b083c31f)] -&gt; id: submitPnrNo]
+Session ID: 3e9a47974477cfc984d3b309b083c31f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at combined.IRCTC.captchaSubmitButton(IRCTC.java:260)
+	at combindTEst.HomePage1.pnrtc03(HomePage1.java:462)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28615585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28615585'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; style=&quot;margin-top: 10px; cursor: auto&quot; class=&quot;btn btn-primary btn-md&quot; value=&quot;Submit&quot; id=&quot;submitPnrNo&quot;&gt; is not clickable at point (944, 402). Other element would receive the click: &lt;img id=&quot;messageDialog&quot; decoding=&quot;async&quot; src=&quot;https://dishav3.ap-south-1.linodeobjects.com/Thumbsup.gif&quot; style=&quot;width: 238px; max-width: 100%; overflow: hidden; backface-visibility: hidden; transition: all 0.3s ease 0s; cursor: pointer; z-index: 9; position: static; border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; display: block; border-bottom-right-radius: 0px !important;&quot;&gt;
+  (Session info: chrome=106.0.5249.103)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;PSL-78VL6Q3&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e9a47974477cfc984d3b309b083c31f, clickElement {id=c6b7c39d-d948-4961-88c4-615658c2981c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\PIYUSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53268}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53268/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3e9a47974477cfc984d3b309b083c31f)] -&gt; id: submitPnrNo]
+Session ID: 3e9a47974477cfc984d3b309b083c31f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at combined.IRCTC.captchaSubmitButton(IRCTC.java:260)
+	at combindTEst.HomePage1.pnrtc03(HomePage1.java:462)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='combindTEst.HomePage1.pnrtc01()'><b>pnrtc01</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>21</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.logintc02()'><b>logintc02</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>13</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.searchtc03()'><b>searchtc03</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>12</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.bookingtc01()'><b>bookingtc01</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>10</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.searchtc02()'><b>searchtc02</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>8</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.searchtc04()'><b>searchtc04</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>18</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.canceltc()'><b>canceltc</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>16</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.logintc03()'><b>logintc03</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>14</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.searchtc01()'><b>searchtc01</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>4</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.logintc01()'><b>logintc01</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>22</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.bookingtc02()'><b>bookingtc02</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>48</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.bookingtc03()'><b>bookingtc03</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>29</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+<tr>
+<td title='combindTEst.HomePage1.pnrtc02()'><b>pnrtc02</b><br>Test class: combindTEst.HomePage1</td>
+<td></td>
+<td>6</td>
+<td>combindTEst.HomePage1@4b45a2f5</td></tr>
+</table><p>
+</body>
+</html>
